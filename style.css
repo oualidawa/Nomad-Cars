@@ -1,132 +1,152 @@
+
 /* Style global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
   color: #333;
-  background-color: #f4f4f4;
 }
 
-/* En-tête avec image de fond dynamique */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
 header {
-  background-image: url('https://images.unsplash.com/photo-1517999066744-e440df0e42ff');
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1541352052840-c3e1a2a8e12a?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjA1fDB8MHxwaG90by1wYWdlfHx8fGVzdHx8fG1lcmNlZGVzJTIwYmVuemJ8ZW58MHx8fHwxNjc1NzY0Njcw&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
   height: 100vh;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-}
-header .overlay {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 30px;
-}
-header h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-header p {
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-header .btn {
-  background-color: #e74c3c;
   color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-header .btn:hover {
-  background-color: #c0392b;
+  text-align: center;
+  padding: 50px 20px;
 }
 
-/* Section à propos */
-.about {
-  background-color: #ecf0f1;
-  padding: 60px 20px;
-  text-align: center;
+header .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
 }
-.about h2 {
-  font-size: 36px;
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
-/* Section véhicules */
-.vehicles {
-  padding: 60px 20px;
-  background-color: #fff;
+header .btn {
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* À propos */
+.about {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.about .container {
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Section des véhicules */
+.vehicles {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
 .vehicles h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
+
 .vehicle-container {
   display: flex;
   justify-content: space-around;
-  gap: 20px;
   flex-wrap: wrap;
 }
+
 .vehicle {
-  background-color: #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border-radius: 8px;
-  width: 300px;
+  width: 30%;
+  margin: 10px 0;
+  text-align: center;
 }
+
 .vehicle img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
-  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .vehicle h3 {
-  font-size: 24px;
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.vehicle p {
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
-.vehicle p {
-  font-size: 16px;
-  margin-bottom: 15px;
-}
+
 .vehicle .btn {
-  background-color: #3498db;
+  background-color: #ff6f61;
   color: white;
-  padding: 10px 20px;
   text-decoration: none;
-  font-weight: bold;
+  padding: 10px 20px;
   border-radius: 5px;
-}
-.vehicle .btn:hover {
-  background-color: #2980b9;
+  font-weight: bold;
 }
 
 /* Section Contact */
 .contact {
-  background-color: #3498db;
-  padding: 60px 20px;
-  color: white;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
   text-align: center;
 }
-.contact a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
-.contact a:hover {
-  text-decoration: underline;
+
+.contact a {
+  color: #ff6f61;
+  text-decoration: none;
 }
 
 /* Footer */
 footer {
-  background-color: #2c3e50;
-  color: white;
-  padding: 10px;
   text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
 }
