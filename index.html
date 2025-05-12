@@ -4,69 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nomad Cars - Location de Voitures à Marrakech</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="libs/bootstrap.min.css">
 </head>
 <body>
-
-  <!-- En-tête avec un fond dynamique -->
   <header>
-    <div class="overlay">
-      <h1>Nomad Cars</h1>
-      <p>Location de Voitures à Marrakech - Service rapide et de qualité</p>
-      <a href="#vehicles" class="btn">Découvrez nos véhicules</a>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="vehicles.html">Nos véhicules</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Section à propos -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>À propos de Nomad Cars</h2>
-      <p>Bienvenue chez **Nomad Cars** ! Nous offrons une expérience unique de location de voitures à Marrakech. Nous avons des véhicules de toutes gammes pour satisfaire vos besoins : citadines, 4x4, SUV, et bien plus encore.</p>
-      <p>Nos prix sont compétitifs et nous assurons une livraison rapide en 24h pour toutes vos réservations. À partir de **200 DHS** par jour.</p>
-    </div>
+  <section id="hero">
+    <h1>Bienvenue chez Nomad Cars</h1>
+    <p>Location de voitures haut de gamme à Marrakech avec des prix raisonnables et une livraison rapide.</p>
   </section>
 
-  <!-- Section des véhicules avec des images et descriptions -->
-  <section id="vehicles" class="vehicles">
-    <h2>Nos Véhicules</h2>
-    <div class="vehicle-container">
-      <div class="vehicle">
-        <!-- Image de voiture Mercedes -->
-        <img src="https://images.unsplash.com/photo-1541352052840-c3e1a2a8e12a?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjA1fDB8MHxwaG90by1wYWdlfHx8fGVzdHx8fG1lcmNlZGVzJTIwYmVuemJ8ZW58MHx8fHwxNjc1NzY0Njcw&ixlib=rb-1.2.1&q=80&w=1080" alt="Mercedes-Benz">
-        <h3>Mercedes-Benz</h3>
-        <p>Un véhicule élégant et confortable pour vos déplacements à Marrakech. À partir de 200 DHS/jour.</p>
-        <a href="#" class="btn">Louer cette voiture</a>
-      </div>
-      <div class="vehicle">
-        <!-- Image de SUV Peugeot -->
-        <img src="https://images.unsplash.com/photo-1596749201597-cd1db34f329d?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjA1fDB8MHxwaG90by1wYWdlfHx8fGVzdHx8fFZlaG91dGJvYXMlMjBwb3VnbmV0JTIwY2VyaXNjfGVufDB8fHx8fDE2NzU3NjI3NzQ&ixlib=rb-1.2.1&q=80&w=1080" alt="SUV Peugeot">
-        <h3>SUV Peugeot</h3>
-        <p>Le SUV idéal pour explorer les environs de Marrakech avec confort. À partir de 200 DHS/jour.</p>
-        <a href="#" class="btn">Louer cette voiture</a>
-      </div>
-      <div class="vehicle">
-        <!-- Image de voiture avec siège auto -->
-        <img src="https://images.unsplash.com/photo-1601906792540-b92328983631?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjA1fDB8MHxwaG90by1wYWdlfHx8fGVzdHx8fGNoYXJsZXR0ZXJzfGVufDB8fHx8fDE2NzU3NjI4NzA&ixlib=rb-1.2.1&q=80&w=1080" alt="Voiture avec siège auto">
-        <h3>Voiture Familiale</h3>
-        <p>Parfaite pour les familles, avec siège auto pour plus de sécurité. À partir de 200 DHS/jour.</p>
-        <a href="#" class="btn">Louer cette voiture</a>
-      </div>
-    </div>
+  <section id="booking">
+    <h2>Réservez votre véhicule</h2>
+    <form action="submit_form.php" method="POST">
+      <label for="vehicle">Choisissez votre voiture :</label>
+      <select id="vehicle" name="vehicle">
+        <option value="audi">Audi Q7</option>
+        <option value="bmw">BMW X5</option>
+        <option value="mercedes">Mercedes GLC</option>
+      </select>
+      <label for="pickup">Date de prise en charge :</label>
+      <input type="date" id="pickup" name="pickup">
+      <label for="return">Date de retour :</label>
+      <input type="date" id="return" name="return">
+      <button type="submit">Réserver maintenant</button>
+    </form>
   </section>
 
-  <!-- Section Contact -->
-  <section id="contact" class="contact">
-    <h2>Contactez-nous</h2>
-    <p>Email : <a href="mailto:chhfgf@fjjjfhf.com">chhfgf@fjjjfhf.com</a></p>
-    <p>Téléphone : <a href="tel:+2120706344088">+212 07 06 34 40 88</a></p>
-    <p>Adresse : Marrakech, Maroc</p>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Nomad Cars. Tous droits réservés.</p>
+    <p>&copy; 2025 Nomad Cars | <a href="mailto:ccbvf@gjkjkg.com">ccbvf@gjkjkg.com</a> | <a href="tel:+212706344088">+212 7 06 34 40 88</a></p>
   </footer>
 
+  <script src="libs/jquery.min.js"></script>
+  <script src="libs/bootstrap.min.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 </html>
