@@ -13,7 +13,7 @@ body {
 
 /* En-tête avec image de fond dynamique */
 header {
-  background-image: url('https://via.placeholder.com/1500x800?text=Voiture+de+location');
+  background-image: url('https://images.unsplash.com/photo-1517999066744-e440df0e42ff');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -105,31 +105,6 @@ header .btn:hover {
 }
 .vehicle .btn:hover {
   background-color: #2980b9;
-}
-
-/* Section témoignages */
-.testimonials {
-  background-color: #f4f4f4;
-  padding: 60px 20px;
-  text-align: center;
-}
-.testimonials h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
-}
-.testimonial {
-  background-color: #fff;
-  padding: 20px;
-  margin: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  font-size: 18px;
-}
-.testimonial span {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-  color: #e74c3c;
 }
 
 /* Section Contact */
