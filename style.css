@@ -1,108 +1,148 @@
-/* Style général */
+/* Style global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
   color: #333;
+  background-color: #f4f4f4;
 }
 
-/* En-tête */
+/* En-tête avec image de fond dynamique */
 header {
-  background-color: #2c3e50;
+  background-image: url('https://via.placeholder.com/1500x800?text=Voiture+de+location');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   color: white;
-  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-header .logo h1 {
-  font-size: 36px;
+header .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
 }
-header .logo p {
-  font-size: 18px;
-  margin-top: 10px;
+header h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
 }
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-  margin-top: 20px;
+header p {
+  font-size: 24px;
+  margin-bottom: 30px;
 }
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-nav ul li a {
+header .btn {
+  background-color: #e74c3c;
   color: white;
+  padding: 15px 30px;
   text-decoration: none;
-  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+header .btn:hover {
+  background-color: #c0392b;
 }
 
-/* Section À propos */
+/* Section à propos */
 .about {
   background-color: #ecf0f1;
-  padding: 40px;
+  padding: 60px 20px;
   text-align: center;
 }
 .about h2 {
-  font-size: 28px;
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
-/* Section Véhicules */
+/* Section véhicules */
 .vehicles {
-  padding: 40px;
+  padding: 60px 20px;
+  background-color: #fff;
   text-align: center;
-  background-color: white;
 }
 .vehicles h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: 36px;
+  margin-bottom: 40px;
 }
 .vehicle-container {
   display: flex;
   justify-content: space-around;
+  gap: 20px;
   flex-wrap: wrap;
-  gap: 30px;
 }
 .vehicle {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
   width: 300px;
-  padding: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 .vehicle img {
   width: 100%;
-  height: auto;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 .vehicle h3 {
   font-size: 24px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .vehicle p {
   font-size: 16px;
-  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.vehicle .btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.vehicle .btn:hover {
+  background-color: #2980b9;
+}
+
+/* Section témoignages */
+.testimonials {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+.testimonials h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-size: 18px;
+}
+.testimonial span {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #e74c3c;
 }
 
 /* Section Contact */
 .contact {
-  background-color: #2c3e50;
+  background-color: #3498db;
+  padding: 60px 20px;
   color: white;
-  padding: 40px;
   text-align: center;
 }
-.contact h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
 .contact a {
-  color: #3498db;
+  color: #fff;
   text-decoration: none;
+  font-weight: bold;
 }
 .contact a:hover {
   text-decoration: underline;
@@ -112,6 +152,6 @@ nav ul li a {
 footer {
   background-color: #2c3e50;
   color: white;
-  text-align: center;
   padding: 10px;
+  text-align: center;
 }
